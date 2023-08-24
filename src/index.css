@@ -82,3 +82,112 @@ p {
 
   border: 1px solid #eaeaea;
 }
+
+.mainContent {
+  padding: 40px 60px 10px 60px;
+}
+
+.mainContent .mainContentTitleWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainContent .mainContentTitleWrapper .allSneakersSubtitle {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.mainContent .mainContentTitleWrapper .searchWrapper {
+  border-radius: 10px;
+  border: 1px solid #F3F3F3;
+  display: flex;
+  align-items: center;
+}
+
+.mainContent .mainContentTitleWrapper .searchWrapper .searchImg {
+  padding-left: 18px;
+  width: 14px;
+  height: 14px;
+}
+
+.mainContent .mainContentTitleWrapper .searchSneakers {
+  width: 250px;
+  height: 45px;
+  color: #C4C4C4;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0;
+  padding-left: 14px;
+}
+
+.mainContent .mainContentTitleWrapper input:focus {
+  outline: none;
+  color: #000000;
+}
+
+.mainContent .contentWrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.mainContent .contentWrapper .contentItem {
+  width: 210px;
+  /* height: 260px; */
+  border: 1px solid #f3f3f3;
+  border-radius: 40px;
+  background: #ffffff;
+  padding: 20px 30px 34px 30px;
+  margin-top: 40px;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.mainContent .contentWrapper .contentItem:hover {
+  box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+  transform: translateY(-5px);
+}
+
+.mainContent .contentWrapper .contentItem .notFavouriteImg {
+  position: absolute;
+  cursor: pointer;
+}
+
+.mainContent .contentItem .sneakersImg {
+  width: 133px;
+  height: 112px;
+  display: block;
+  margin: 0 auto;
+}
+
+.mainContent .contentItem .contentItemDescr {
+  margin-top: 14px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.mainContent .contentItem .contentItemBottom {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainContent .contentItem .contentItemBottom .price .priceTitle {
+  color: #bdbdbd;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.mainContent .contentItem .contentItemBottom .price .priceValue {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.mainContent .contentItem .contentItemBottom img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}

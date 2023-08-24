@@ -18,6 +18,78 @@ function App() {
           <img src="./icon/header/profile.svg" alt="profile" className="profile" />
         </div>
       </header>
+
+      <main className="mainContent">
+        <div className="mainContentTitleWrapper">
+          <h2 className="allSneakersSubtitle">Все кроссовки</h2>
+          <div className="searchWrapper">
+            <img src="./icon/main-content/search.svg" alt="Search" className="searchImg" />
+            <input type="text" placeholder="Поиск..." className="searchSneakers" />
+          </div>
+        </div>
+        <div className="contentWrapper">
+          <div className="contentItem">
+            <div className="notFavouriteImg">
+              <img src="./icon/main-content/favourites-inactive.svg" alt="Not favourite" />
+            </div>
+            <img src="./img/sneakers/sneakers1.png" alt="sneakers img" className="sneakersImg" />
+            <p className="contentItemDescr">Мужские Кроссовки Nike Blazer Mid Suede</p>
+            <div className="contentItemBottom">
+              <div className="price">
+                <p className="priceTitle">Цена:</p>
+                <p className="priceValue">12 999 руб.</p>
+              </div>
+              <img src="./icon/main-content/cart-not-add.svg" alt="add cart" />
+            </div>
+          </div>
+
+          <div className="contentItem">
+            <div className="notFavouriteImg">
+              <img src="./icon/main-content/favourites-inactive.svg" alt="Not favourite" />
+            </div>
+            <img src="./img/sneakers/sneakers2.png" alt="sneakers img" className="sneakersImg" />
+            <p className="contentItemDescr">Мужские Кроссовки Nike Air Max 270</p>
+            <div className="contentItemBottom">
+              <div className="price">
+                <p className="priceTitle">Цена:</p>
+                <p className="priceValue">12 999 руб.</p>
+              </div>
+              <img src="./icon/main-content/cart-not-add.svg" alt="add cart" />
+            </div>
+          </div>
+
+          <div className="contentItem">
+            <div className="notFavouriteImg">
+              <img src="./icon/main-content/favourites-inactive.svg" alt="Not favourite" />
+            </div>
+            <img src="./img/sneakers/sneakers3.png" alt="sneakers img" className="sneakersImg" />
+            <p className="contentItemDescr">Мужские Кроссовки Nike Blazer Mid Suede</p>
+            <div className="contentItemBottom">
+              <div className="price">
+                <p className="priceTitle">Цена:</p>
+                <p className="priceValue">12 999 руб.</p>
+              </div>
+              <img src="./icon/main-content/cart-not-add.svg" alt="add cart" />
+            </div>
+          </div>
+
+          <div className="contentItem">
+            <div className="notFavouriteImg">
+              <img src="./icon/main-content/favourites-inactive.svg" alt="Not favourite" />
+            </div>
+            <img src="./img/sneakers/sneakers4.png" alt="sneakers img" className="sneakersImg" />
+            <p className="contentItemDescr">Кроссовки Puma X Aka Boku Future Rider</p>
+            <div className="contentItemBottom">
+              <div className="price">
+                <p className="priceTitle">Цена:</p>
+                <p className="priceValue">12 999 руб.</p>
+              </div>
+              <img src="./icon/main-content/cart-not-add.svg" alt="add cart" />
+            </div>
+          </div>
+        </div>
+
+      </main>
     </div>
   );
 }
