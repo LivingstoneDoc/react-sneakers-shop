@@ -1,6 +1,22 @@
 function App() {
   return (
     <div className="wrapper">
+      <div className="cartOverlay">
+        <div className="cart">
+          <h2 className="cartSubtitle">Корзина</h2>
+          <div className="cartContentWrapper">
+            <div className="cartItem">
+              {/*TODO: change image size, position on the page*/}
+              <img src="./img/sneakers/sneakers2.png" alt="Sneakers" className="cartItemImg" />
+              <div className="cartItemDescr">
+                <p className="cartItemName">Мужские Кроссовки Nike Air Max 270</p>
+                <p className="cartItemPrice">12 999 руб.</p>
+              </div>
+              <img src="./icon/cart/cart-remove-item-hover.svg" alt="delete" className="cartRemoveImg" />
+            </div>
+          </div>
+        </div>
+      </div>
       <header className="header">
         <div className="headerLeft">
           <img src="./icon/header/logo.svg" alt="logo" className="logo" />
