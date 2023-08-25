@@ -6,11 +6,19 @@ function App() {
           <h2 className="cartSubtitle">Корзина</h2>
           <div className="cartContentWrapper">
             <div className="cartItem">
-              {/*TODO: change image size, position on the page*/}
-              <img src="./img/sneakers/sneakers2.png" alt="Sneakers" className="cartItemImg" />
+              <div style={{backgroundImage: 'url(./img/sneakers/sneakers2.png)'}} className="cartItemImg"></div>
               <div className="cartItemDescr">
                 <p className="cartItemName">Мужские Кроссовки Nike Air Max 270</p>
                 <p className="cartItemPrice">12 999 руб.</p>
+              </div>
+              <img src="./icon/cart/cart-remove-item-hover.svg" alt="delete" className="cartRemoveImg" />
+            </div>
+
+            <div className="cartItem">
+              <div style={{backgroundImage: 'url(./img/sneakers/sneakers4.png)'}} className="cartItemImg"></div>
+              <div className="cartItemDescr">
+                <p className="cartItemName">Кроссовки Puma X Aka Boku Future Rider</p>
+                <p className="cartItemPrice">8 999 руб.</p>
               </div>
               <img src="./icon/cart/cart-remove-item-hover.svg" alt="delete" className="cartRemoveImg" />
             </div>
@@ -83,7 +91,7 @@ function App() {
             <div className="contentItemBottom">
               <div className="price">
                 <p className="priceTitle">Цена:</p>
-                <p className="priceValue">12 999 руб.</p>
+                <p className="priceValue">8 499 руб.</p>
               </div>
               <img src="./icon/main-content/cart-not-add.svg" alt="add cart" />
             </div>
@@ -98,7 +106,7 @@ function App() {
             <div className="contentItemBottom">
               <div className="price">
                 <p className="priceTitle">Цена:</p>
-                <p className="priceValue">12 999 руб.</p>
+                <p className="priceValue">8 999 руб.</p>
               </div>
               <img src="./icon/main-content/cart-not-add.svg" alt="add cart" />
             </div>

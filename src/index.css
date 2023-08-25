@@ -241,7 +241,7 @@ p {
 .wrapper .cartOverlay .cart .cartContentWrapper .cartItem .cartItemImg {
   width: 70px;
   height: 70px;
-  background: lightgray 50% / cover no-repeat;
+  background:  0 5px / contain no-repeat;
   margin-right: 20px;
 }
 
