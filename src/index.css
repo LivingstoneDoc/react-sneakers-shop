@@ -234,6 +234,7 @@ p {
   flex-direction: column;
   gap: 20px;
   flex: 1;
+  overflow: auto;
 }
 
 .wrapper .cartOverlay .cart .cartItemsWrapper .cartItem {
@@ -244,7 +245,7 @@ p {
   border-radius: 20px;
   border: 1px solid #f3f3f3;
   background: #ffffff;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .wrapper .cartOverlay .cart .cartItemsWrapper .cartItem .cartItemImg {
@@ -290,6 +291,7 @@ p {
   justify-content: space-between;
   gap: 10px;
   align-items: end;
+  margin-top: 20px;
 }
 
 .wrapper .cartOverlay .cart .cartBottomContentWrapper .dashLine {
