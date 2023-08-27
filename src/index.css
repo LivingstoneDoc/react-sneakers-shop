@@ -7,6 +7,7 @@ body {
 
 * {
   font-family: 'Inter', system-ui;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -226,13 +227,6 @@ p {
   font-weight: 700;
   margin: 0;
 }
-
-/* .wrapper .cartOverlay .cart {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
 
 .wrapper .cartOverlay .cart .cartItemsWrapper {
   margin-top: 30px;
