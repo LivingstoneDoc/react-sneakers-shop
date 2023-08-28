@@ -3,6 +3,10 @@ import Cart from "./components/Cart";
 import Card from "./components/Card";
 
 function App() {
+  const sneakersItemCardsArr = [
+    {name: "Мужские Кроссовки Nike Blazer Mid Suede", price: 12999},
+    {name: "Мужские Кроссовки Nike Air Max 270", price: 9999}
+  ]
   return (
     <div className="wrapper">
       <Cart />
@@ -16,10 +20,7 @@ function App() {
           </div>
         </div>
         <div className="contentWrapper">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {sneakersItemCardsArr.map(arrItem => <Card />)}
         </div>
 
       </main>
@@ -28,3 +29,13 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+const sneakersCardsArr = [
+  {name: "Мужские Кроссовки Nike Blazer Mid Suede", price: 12999},
+  {name: "Мужские Кроссовки Nike Air Max 270", price: 9999}
+]
