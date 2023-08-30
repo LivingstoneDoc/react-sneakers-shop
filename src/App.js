@@ -4,10 +4,10 @@ import Card from "./components/Card";
 
 function App() {
   const sneakersCardsArr = [
-    {title: "Мужские Кроссовки Nike Blazer Mid Suede", price: 12999, imgUrl: "./img/sneakers/sneakers1.png"},
-    {title: "Мужские Кроссовки Nike Air Max 270", price: 9999, imgUrl: "./img/sneakers/sneakers2.png"},
-    {title: "Мужские Кроссовки Nike Blazer Mid Suede", price: 8499, imgUrl: "./img/sneakers/sneakers3.png"},
-    {title: "Кроссовки Puma X Aka Boku Future Rider", price: 8999, imgUrl: "./img/sneakers/sneakers4.png"}
+    {id: 1, title: "Мужские Кроссовки Nike Blazer Mid Suede", price: 12999, imgUrl: "./img/sneakers/sneakers1.png"},
+    {id: 2, title: "Мужские Кроссовки Nike Air Max 270", price: 9999, imgUrl: "./img/sneakers/sneakers2.png"},
+    {id: 3, title: "Мужские Кроссовки Nike Blazer Mid Suede", price: 8499, imgUrl: "./img/sneakers/sneakers3.png"},
+    {id: 4, title: "Кроссовки Puma X Aka Boku Future Rider", price: 8999, imgUrl: "./img/sneakers/sneakers4.png"}
   ]
   return (
     <div className="wrapper">
@@ -23,10 +23,12 @@ function App() {
         </div>
         <div className="contentWrapper">
             {sneakersCardsArr.map(itemArr => (
-              <Card 
+              <Card
+                key={itemArr.id}
                 title={itemArr.title}
                 price={itemArr.price}
                 imgUrl={itemArr.imgUrl}
+                onClick={() => console.log(itemArr)}
               />
             ))}
         </div>
