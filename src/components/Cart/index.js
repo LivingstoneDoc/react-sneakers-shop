@@ -1,3 +1,5 @@
+import "./Cart.css";
+
 function Cart() {
     return (
         <div style={{ display: "none" }} className="cartOverlay">

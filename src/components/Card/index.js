@@ -1,6 +1,6 @@
-function Card(props) {
-console.log(props);
+import "./Card.css";
 
+function Card(props) {
     return (
         <div className="contentItem">
             <div className="notFavouriteImg">
