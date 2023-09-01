@@ -28,7 +28,8 @@ function App() {
                 title={itemArr.title}
                 price={itemArr.price}
                 imgUrl={itemArr.imgUrl}
-                onClick={() => console.log(itemArr)}
+                onClickPlusBtn={() => console.log("Plus click")}
+                onClickFavouriteBtn={() => console.log("Favourite click")}
               />
             ))}
         </div>

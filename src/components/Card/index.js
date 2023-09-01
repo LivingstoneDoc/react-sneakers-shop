@@ -3,7 +3,7 @@ import "./Card.css";
 function Card(props) {
     return (
         <div className="contentItem">
-            <div className="notFavouriteImg">
+            <div className="notFavouriteImg" onClick={props.onClickFavouriteBtn}>
               <img src="./icon/main-content/favourites-inactive.svg" alt="Not favourite" />
             </div>
             <img src={props.imgUrl} alt="sneakers img" className="sneakersImg" />
@@ -13,7 +13,7 @@ function Card(props) {
                 <p className="priceTitle">Цена:</p>
                 <p className="priceValue">{props.price} руб.</p>
               </div>
-              <img src="./icon/main-content/cart-not-add.svg" alt="add cart" onClick={props.onClick}/>
+              <img src="./icon/main-content/cart-not-add.svg" alt="add cart" onClick={props.onClickPlusBtn}/>
             </div>
           </div>
     );
