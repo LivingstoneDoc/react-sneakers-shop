@@ -39,15 +39,15 @@ body {
   border: 1px solid #F3F3F3;
   display: flex;
   align-items: center;
+  padding: 0 18px;
 }
 
 .mainContent .mainContentTitleWrapper .searchWrapper .searchImg {
-  padding-left: 18px;
   width: 14px;
   height: 14px;
 }
 
-.mainContent .mainContentTitleWrapper .searchSneakers {
+.mainContent .mainContentTitleWrapper .searchWrapper .searchSneakers {
   width: 250px;
   height: 45px;
   color: #C4C4C4;
@@ -57,7 +57,7 @@ body {
   padding-left: 14px;
 }
 
-.mainContent .mainContentTitleWrapper input:focus {
+.mainContent .mainContentTitleWrapper .searchWrapper input:focus {
   outline: none;
   color: #000000;
 }
