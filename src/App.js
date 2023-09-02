@@ -1,14 +1,17 @@
+import { useState } from "react";
 import Header from "./components/Header";
 import Cart from "./components/Cart";
 import Card from "./components/Card";
 
 function App() {
+
   const sneakersCardsArr = [
     {id: 1, title: "Мужские Кроссовки Nike Blazer Mid Suede", price: 12999, imgUrl: "./img/sneakers/sneakers1.png"},
     {id: 2, title: "Мужские Кроссовки Nike Air Max 270", price: 9999, imgUrl: "./img/sneakers/sneakers2.png"},
     {id: 3, title: "Мужские Кроссовки Nike Blazer Mid Suede", price: 8499, imgUrl: "./img/sneakers/sneakers3.png"},
     {id: 4, title: "Кроссовки Puma X Aka Boku Future Rider", price: 8999, imgUrl: "./img/sneakers/sneakers4.png"}
   ]
+
   return (
     <div className="wrapper">
       <Cart />
