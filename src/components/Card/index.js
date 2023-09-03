@@ -9,8 +9,6 @@ function Card(props) {
     setIsAdd(!isAdd);
   }
 
-  console.log(isAdd);
-
   return (
     <div className="contentItem">
       <div className="notFavouriteImg" onClick={props.onClickFavouriteBtn}>
