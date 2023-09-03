@@ -1,6 +1,7 @@
 import "./Header.css"
 
-function Header() {
+function Header(props) {
+  console.log(props);
     return (
         <header className="header">
         <div className="headerLeft">
@@ -11,7 +12,7 @@ function Header() {
           </div>
         </div>
         <div className="headerRight">
-          <div className="cart-wrapper">
+          <div onClick={props.onClickCart} className="cart-wrapper">
             <img src="./icon/header/cart.svg" alt="cart" className="cart" />
             <p>1205 руб.</p>
           </div>

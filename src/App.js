@@ -1,8 +1,11 @@
+import { useState } from "react";
 import Header from "./components/Header";
 import Cart from "./components/Cart";
 import Card from "./components/Card";
 
 function App() {
+
+  const [isOpenCart, setIsOpenCart] = useState(false);
 
   const sneakersCardsArr = [
     {id: 1, title: "Мужские Кроссовки Nike Blazer Mid Suede", price: 12999, imgUrl: "./img/sneakers/sneakers1.png"},
@@ -13,8 +16,8 @@ function App() {
 
   return (
     <div className="wrapper">
-      <Cart />
-      <Header />
+      {isOpenCart && <Cart onClose={() => setIsOpenCart(false)}/>}
+      <Header onClickCart={() => setIsOpenCart(true)}/>
       <main className="mainContent">
         <div className="mainContentTitleWrapper">
           <h2 className="allSneakersSubtitle">Все кроссовки</h2>

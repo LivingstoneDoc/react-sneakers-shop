@@ -1,12 +1,13 @@
 import "./Cart.css";
 
-function Cart() {
+function Cart(props) {
+  console.log(props);
     return (
-        <div style={{ display: "none" }} className="cartOverlay">
+        <div className="cartOverlay">
         <div className="cart">
           <div className="cartTitleWrapper">
             <h2 className="cartSubtitle">Корзина</h2>
-            <img src="./icon/cart/cart-remove-item-hover.svg" alt="delete" className="cartRemoveImg" />
+            <img onClick={props.onClose} src="./icon/cart/cart-remove-item-hover.svg" alt="Close" className="cartRemoveImg" />
           </div>
           {/* <div className="cartContentWrapper"> */}
 
@@ -17,7 +18,7 @@ function Cart() {
                 <p className="cartItemName">Мужские Кроссовки Nike Air Max 270</p>
                 <p className="cartItemPrice">12 999 руб.</p>
               </div>
-              <img src="./icon/cart/cart-remove-item-hover.svg" alt="delete" className="cartRemoveImg" />
+              <img src="./icon/cart/cart-remove-item-hover.svg" alt="Delete" className="cartRemoveImg" />
             </div>
 
             <div className="cartItem">
@@ -26,7 +27,7 @@ function Cart() {
                 <p className="cartItemName">Кроссовки Puma X Aka Boku Future Rider</p>
                 <p className="cartItemPrice">8 999 руб.</p>
               </div>
-              <img src="./icon/cart/cart-remove-item-hover.svg" alt="delete" className="cartRemoveImg" />
+              <img src="./icon/cart/cart-remove-item-hover.svg" alt="Delete" className="cartRemoveImg" />
             </div>
           </div>
 

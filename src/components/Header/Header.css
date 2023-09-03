@@ -45,6 +45,7 @@
   .wrapper .header .headerRight .cart-wrapper {
     display: flex;
     gap: 10px;
+    cursor: pointer;
   }
   
   .wrapper .header .headerRight .cart-wrapper p {
