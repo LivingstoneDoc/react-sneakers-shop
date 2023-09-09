@@ -1,7 +1,6 @@
 import "./Header.css"
 
 function Header(props) {
-  console.log(props);
     return (
         <header className="header">
         <div className="headerLeft">

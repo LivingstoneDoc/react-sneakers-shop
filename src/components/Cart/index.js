@@ -1,34 +1,26 @@
 import "./Cart.css";
 
-function Cart(props) {
-  console.log(props);
+function Cart({onClose, items}) {
     return (
         <div className="cartOverlay">
         <div className="cart">
           <div className="cartTitleWrapper">
             <h2 className="cartSubtitle">Корзина</h2>
-            <img onClick={props.onClose} src="./icon/cart/cart-remove-item-hover.svg" alt="Close" className="cartRemoveImg" />
+            <img onClick={onClose} src="./icon/cart/cart-remove-item-hover.svg" alt="Close" className="cartRemoveImg" />
           </div>
           {/* <div className="cartContentWrapper"> */}
 
           <div className="cartItemsWrapper">
-            <div className="cartItem">
-              <div style={{ backgroundImage: 'url(./img/sneakers/sneakers2.png)' }} className="cartItemImg"></div>
+            {items.map(itemsArr => (
+              <div className="cartItem">
+              <div style={{ backgroundImage: `url(${itemsArr.imgUrl})` }} className="cartItemImg"></div>
               <div className="cartItemDescr">
-                <p className="cartItemName">Мужские Кроссовки Nike Air Max 270</p>
-                <p className="cartItemPrice">12 999 руб.</p>
+                <p className="cartItemName">{itemsArr.title}</p>
+                <p className="cartItemPrice">{itemsArr.price} руб.</p>
               </div>
               <img src="./icon/cart/cart-remove-item-hover.svg" alt="Delete" className="cartRemoveImg" />
             </div>
-
-            <div className="cartItem">
-              <div style={{ backgroundImage: 'url(./img/sneakers/sneakers4.png)' }} className="cartItemImg"></div>
-              <div className="cartItemDescr">
-                <p className="cartItemName">Кроссовки Puma X Aka Boku Future Rider</p>
-                <p className="cartItemPrice">8 999 руб.</p>
-              </div>
-              <img src="./icon/cart/cart-remove-item-hover.svg" alt="Delete" className="cartRemoveImg" />
-            </div>
+            ))}
           </div>
 
           <div className="cartBottomContentWrapper">
