@@ -2,8 +2,8 @@ import "./Cart.css";
 
 function Cart({onClose, items}) {
     return (
-        <div className="cartOverlay">
-        <div className="cart">
+        <div className="cartOverlay" onClick={onClose}>
+        <div className="cart" onClick={(e) => e.stopPropagation(e)}>
           <div className="cartTitleWrapper">
             <h2 className="cartSubtitle">Корзина</h2>
             <img onClick={onClose} src="./icon/cart/cart-remove-item-hover.svg" alt="Close" className="cartRemoveImg" />
@@ -11,10 +11,10 @@ function Cart({onClose, items}) {
           {/* <div className="cartContentWrapper"> */}
 
           <div className="cartItemsWrapper">
-            {items.map(itemsArr => (
-              <div className="cartItem">
+            {items.map((itemsArr, i) => (
+              <div className="cartItem" key={i}>
               <div style={{ backgroundImage: `url(${itemsArr.imgUrl})` }} className="cartItemImg"></div>
-              <div className="cartItemDescr">
+              <div className="cartItemDescr" key={i}>
                 <p className="cartItemName">{itemsArr.title}</p>
                 <p className="cartItemPrice">{itemsArr.price} руб.</p>
               </div>
