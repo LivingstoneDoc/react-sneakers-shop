@@ -11,21 +11,26 @@ function App() {
 
   useEffect(() => {
     fetch("https://64f4ab91932537f4051a96b6.mockapi.io/items")
-    .then(res => {
-      return res.json();
-    })
-    .then(json => {
-      setItems(json);
-    });
+      .then(res => {
+        return res.json();
+      })
+      .then(json => {
+        setItems(json);
+      });
   }, []);
 
   const onAddToCart = (obj) => {
     setCartItems(prev => [...prev, obj]);
   };
 
+  const removeItemCart = (index) => {
+    const restItemsCart = cartItems.filter((itemArr, i) => i !== index);
+    setCartItems(restItemsCart);
+  }
+
   return (
     <div className="wrapper">
-      {isOpenCart && <Cart items={cartItems} onClose={() => setIsOpenCart(false)} />}
+      {isOpenCart && <Cart items={cartItems} onClose={() => setIsOpenCart(false)} onDelete={(index) => removeItemCart(index)}/>}
       <Header onClickCart={() => setIsOpenCart(true)} />
       <main className="mainContent">
         <div className="mainContentTitleWrapper">
@@ -43,6 +48,7 @@ function App() {
               price={itemArr.price}
               imgUrl={itemArr.imgUrl}
               onClickPlusBtn={(obj) => onAddToCart(obj)}
+              onDeleteItemCart={(index) => removeItemCart(index)}
               onClickFavouriteBtn={() => console.log("Favourite click")}
             />
           ))}

@@ -1,13 +1,16 @@
 import { useState } from "react";
 import "./Card.css";
 
-function Card({title, price, imgUrl, onClickFavouriteBtn, onClickPlusBtn}) {
+function Card({title, price, imgUrl, onClickFavouriteBtn, onClickPlusBtn, onDeleteItemCart}) {
 
   const [isAdd, setIsAdd] = useState(false);
 
   const onClickPlus = () => {
     onClickPlusBtn({title, price, imgUrl});
     setIsAdd(!isAdd);
+    if (onDeleteItemCart) {
+      setIsAdd(isAdd);
+    }
   }
 
   return (

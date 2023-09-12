@@ -1,6 +1,6 @@
 import "./Cart.css";
 
-function Cart({onClose, items}) {
+function Cart({onClose, items, onDelete}) {
     return (
         <div className="cartOverlay" onClick={onClose}>
         <div className="cart" onClick={(e) => e.stopPropagation(e)}>
@@ -18,7 +18,7 @@ function Cart({onClose, items}) {
                 <p className="cartItemName">{itemsArr.title}</p>
                 <p className="cartItemPrice">{itemsArr.price} руб.</p>
               </div>
-              <img src="./icon/cart/cart-remove-item-hover.svg" alt="Delete" className="cartRemoveImg" />
+              <img src="./icon/cart/cart-remove-item-hover.svg" alt="Delete" className="cartRemoveImg" onClick={() => onDelete(i)}/>
             </div>
             ))}
           </div>
