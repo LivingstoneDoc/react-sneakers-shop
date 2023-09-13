@@ -8,9 +8,9 @@ function Card({title, price, imgUrl, onClickFavouriteBtn, onClickPlusBtn, onDele
   const onClickPlus = () => {
     onClickPlusBtn({title, price, imgUrl});
     setIsAdd(!isAdd);
-    if (onDeleteItemCart) {
-      setIsAdd(isAdd);
-    }
+    // if (onDeleteItemCart) {
+    //   setIsAdd(isAdd);
+    // }
   }
 
   return (
