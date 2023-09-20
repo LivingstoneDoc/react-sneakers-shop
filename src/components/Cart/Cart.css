@@ -1,5 +1,5 @@
 .wrapper .cartOverlay {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     left: 0;
@@ -9,7 +9,7 @@
   }
   
   .wrapper .cartOverlay .cart {
-    position: absolute;
+    position: fixed;
     width: 385px;
     height: 100%;
     background: #ffffff;
